@@ -7,90 +7,99 @@
 </head>
 <body>
 
-<!-- Header Section -->
 <header>
-    <div class="container">
-        <h1>Dr. Poojitha P</h1>
-        <p>Assistant Professor (Senior Grade) | Researcher in Food Process Engineering</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <div class="container header-grid">
+        <img src="photo.jpg" class="profile-pic" alt="Profile Photo">
+
+        <div class="header-text">
+            <h1>Dr. Poojitha P</h1>
+            <p class="subtext">Assistant Professor (Senior Grade) | Food Process Engineering</p>
+
+            <div class="buttons">
+                <a href="CV.pdf" class="btn" download>Download CV</a>
+                <a href="mailto:poojithapushparaj@gmail.com" class="btn-outline">Email Me</a>
+            </div>
+
+            <div class="metrics">
+                <div><strong>ORCID:</strong> 0000-0001-7022-0314</div>
+                <div><strong>Scopus ID:</strong> 57190394011</div>
+                <div><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=en&user=BMIe5Q8AAAAJ" target="_blank">Profile →</a></div>
+                <div><strong>WOS ID:</strong> LFU-8486-2024</div>
+            </div>
+        </div>
     </div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            Dedicated and adaptable researcher in Food Process Engineering with expertise in
-            novel food processing technologies, protein extraction, and functional food development.
-        </p>
-    </div>
-</section>
-
-<!-- Research Section -->
-<section id="research" class="section bg-light">
+<section class="section">
     <div class="container">
         <h2>Research Areas</h2>
-        <ul>
+        <ul class="bullet">
             <li>Ohmic Heating & Non-Thermal Processing</li>
-            <li>Food Process Engineering</li>
-            <li>Spray Drying & Freeze Drying</li>
             <li>Functional Food Product Development</li>
-            <li>Food Microbiology & Quality Testing</li>
+            <li>Spray Drying & Freeze Drying</li>
+            <li>Food Quality Testing & Microbiology</li>
+            <li>Food Process Engineering</li>
         </ul>
     </div>
 </section>
 
-<!-- Publications Section -->
-<section id="publications" class="section">
+<section class="section bg-light">
     <div class="container">
         <h2>Publications</h2>
-        <p>Selected Publications:</p>
-        <ul>
-            <li>Effect of Ohmic Blanching on Drying Kinetics (Journal of Food Science & Technology)</li>
-            <li>Ultrasound-Assisted Extraction of Garlic Bioactives (JAPS, 2020)</li>
-            <li>Nanotechnology in Food Industries (Current Research in Nutrition and Food Science, 2022)</li>
-        </ul>
-        <p><a class="btn" target="_blank"
-            href="https://scholar.google.com/citations?hl=en&user=BMIe5Q8AAAAJ">View Full Google Scholar Profile →</a></p>
+
+        <!-- FILTERS -->
+        <div class="filters">
+            <select id="yearFilter">
+                <option value="all">All Years</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+            </select>
+
+            <select id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="indexed">Indexed Journals</option>
+                <option value="nonindexed">Non-Indexed Journals</option>
+                <option value="conference">Conference Papers</option>
+            </select>
+        </div>
+
+        <!-- PUBLICATION LIST -->
+        <div id="pubList"></div>
     </div>
 </section>
 
-<!-- Experience Section -->
-<section id="experience" class="section bg-light">
+<section class="section">
     <div class="container">
         <h2>Experience</h2>
-        <ul>
+        <ul class="bullet">
             <li><strong>Assistant Professor (Senior Grade)</strong> – Saintgits College of Engineering</li>
             <li><strong>Assistant Professor & HoD</strong> – Bannari Amman Institute of Technology</li>
-            <li><strong>Researcher</strong> – SRM Institute of Science & Technology (Ohmic Heating Project)</li>
+            <li><strong>Researcher</strong> – SRM Institute of Science & Technology</li>
             <li><strong>Visiting Researcher</strong> – CARiFF, University Malaysia Pahang</li>
         </ul>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
+<section class="section bg-light">
     <div class="container">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:poojithapushparaj@gmail.com">poojithapushparaj@gmail.com</a></p>
-        <p>Phone: 9884542377</p>
-        <p>LinkedIn: 
-           <a target="_blank" href="https://www.linkedin.com/in/dr-poojitha-pushparaj-phd-eng-a65005120/">
-           Click Here</a>
+        <p><strong>Email:</strong> <a href="mailto:poojithapushparaj@gmail.com">poojithapushparaj@gmail.com</a></p>
+        <p><strong>Phone:</strong> 9884542377</p>
+        <p><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/dr-poojitha-pushparaj-phd-eng-a65005120/" target="_blank">
+                Visit Profile →
+            </a>
         </p>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 Dr. Poojitha P | Designed for GitHub Pages</p>
+    © 2025 — Dr. Poojitha P | Designed for GitHub Pages
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
