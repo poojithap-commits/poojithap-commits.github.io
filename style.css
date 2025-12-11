@@ -1,54 +1,108 @@
-/* Reset */
-body, h1, h2, p, ul { margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; line-height: 1.6; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F7FAFC;
+}
 
-/* Header */
 header {
     background: #2B6CB0;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
 }
-header h1 { margin-bottom: 10px; }
-header nav a {
-    margin: 0 10px;
-    color: #E3F2FD;
-    text-decoration: none;
-}
-header nav a:hover { text-decoration: underline; }
 
-/* Container */
 .container {
     width: 80%;
     margin: auto;
-    max-width: 1000px;
 }
 
-/* Sections */
+.header-grid {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.header-text h1 {
+    margin: 0;
+}
+
+.subtext {
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin: 15px 0;
+}
+
+.btn {
+    background: white;
+    color: #2B6CB0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    padding: 8px 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.metrics {
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
 .section {
     padding: 40px 0;
+    background: white;
 }
+
 .bg-light {
-    background: #F7FAFC;
+    background: #EDF2F7;
 }
-.section h2 {
-    margin-bottom: 20px;
+
+h2 {
     color: #2B6CB0;
 }
 
-/* Button */
-.btn {
-    display: inline-block;
-    background: #2B6CB0;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.btn:hover {
-    background: #1A4F80;
+.bullet li {
+    margin: 8px 0;
 }
 
-/* Footer */
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #CBD5E0;
+}
+
+/* Publication list */
+.pub-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #2B6CB0;
+    border-radius: 6px;
+}
+
 footer {
     text-align: center;
     padding: 15px;
